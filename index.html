@@ -12,8 +12,10 @@
       </assets>
 	  
       <a-marker type="pattern" url="pattern_earth.patt">
-        <a-entity gltf-model="#earth" position="0 0.8 0" rotation="23.4 0 0" animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 24000; easing: linear; loop: true">
-			<a-entity gltf-model="#moon" position="3.8 0 0" rotation="0 180 0"></a-entity>
+        <a-entity gltf-model="#earth" position="0 0.8 0" rotation="23.4 0 0" animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 24000; easing: linear; loop: true"></a-entity>
+		
+		<a-entity position="0 0.8 0" rotation="23.4 0 0"　animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 65520; easing: linear; loop: true">>
+		  <a-entity gltf-model="#moon" position="3.8 0 0" animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 65520; easing: linear; loop: true"></a-entity>
 		</a-entity>
       </a-marker>
 
