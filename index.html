@@ -7,12 +7,14 @@
   <body>
     <a-scene>
       <assets>
-        <a-asset-item id="errth" src=""></a-asset-item>
-        <a-asset-item id="moon" src=""></a-asset-item>
+        <a-asset-item id="errth" src="object/earth.glb"></a-asset-item>
+        <a-asset-item id="moon" src="object/moon.glb"></a-asset-item>
       </assets>
 	  
-      <a-marker type="">
-        <a-entity gltf-model="#sample" id="model"></a-entity>
+      <a-marker type="pattern" src="pattern_earth.patt">
+        <a-entity gltf-model="#earth">
+			<a-entity gltf-model="#moon" position="0.38 0 0"></a-entity>
+		</a-entity>	  
       </a-marker>
 
       <a-entity camera></a-entity>
